@@ -1,0 +1,480 @@
+* {
+    padding: 0px;
+    margin:  0px;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    
+    font-size: 62.5%;/*<--- 1rem = 10px*/
+ }
+
+.header {
+    padding: 1rem;
+    border-bottom: solid black 1px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 7rem;
+    width: 35rem;
+}
+
+.nav {
+    overflow: hidden;
+    margin-top: 3.2rem;
+    float: right;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+} .nav:first-child {
+    margin-left: 5rem;
+}
+.nav #nav-el{
+    margin-right: 5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+} 
+#nav-el:hover {
+    color: #be0029;
+    transition: 0.18s;
+}
+  
+#nav-el {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+}
+  
+@media (max-width: 861px) {
+    .nav {
+      display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        color: #000000;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    #burger-menu:hover{
+        content: url("japanImages/burgerRosso.svg");
+    }
+  
+    /*.hamburger.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+    }
+  
+    .hamburger.active #nav-el {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .hamburger.active #nav-el:last-child {
+      margin-bottom: 0;
+    }*/
+}
+  
+
+@media screen and (max-width: 860px) {
+    .nav{
+        float: none;
+        margin: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.slider-container img {
+    max-width: 100%;
+}
+  
+.slider-container{
+    height: 40rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+}
+  
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+}
+  
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #868686;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+}
+
+.jpn-img {
+    height: 80rem;
+    width: 90rem;
+    padding: 2rem;
+    
+    color: #111;
+    text-align: center;    
+    float: left;
+    font-size: 90px;
+    shape-outside: polygon();
+    display: inline-block;
+    background-clip: content-box;
+}
+
+.title {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.txt {
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.pref-pointer {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 0;
+}
+.pref-pointer:hover {
+    cursor: pointer;
+}
+
+.hokkaido {
+    background-color: #9e5d5d;
+}
+.tohoku {
+    background-color: #b79f7a;
+}
+.kanto {
+    background-color: #7a9f5d;
+}
+.chubu {
+    background-color: #70a0ac;
+}
+.kansai {
+    background-color: #9575a4;
+}
+.chugoku {
+    background-color: #b35702;
+}
+.shikoku {
+    background-color: #5456a3;
+}
+.kyushu {
+    background-color: #7a7a7a;
+}
+.okinawa {
+    background-color: #7a7a7a;
+}
+
+.extend-pointer {
+    background-color: #111111ad;
+    width: 0.2rem;
+    height: 4rem;
+    position: absolute;
+    z-index: 0;
+}
+
+#pp1{
+    font-size: 1.4rem;
+    top: 27rem;
+    left: 61rem;
+}
+#pp2{
+    font-size: 1.4rem;
+    top: 38.5rem;
+    left: 55.5rem;
+}
+#pp3{
+    font-size: 1.4rem;
+    top: 43rem;
+    left: 57rem;
+}
+#pp4{
+    font-size: 1.4rem;
+    top: 47.5rem;
+    left: 55.5rem;
+}
+#pp5{
+    font-size: 1.4rem;
+    top: 42.5rem;
+    left: 53.5rem;
+}
+#pp6{
+    font-size: 1.4rem;
+    top: 47.5rem;
+    left: 52.5rem;
+}
+#pp7{
+    font-size: 1.4rem;
+    top: 52rem;
+    left: 53rem;
+}
+#pp8{
+    font-size: 1.4rem;
+    top: 56.5rem;
+    left: 53.5rem;
+}
+#pp9{
+    font-size: 1.4rem;
+    top: 55rem;
+    left: 51.7rem;
+}
+#pp10{
+    font-size: 1.4rem;
+    top: 55.5rem;
+    left: 49rem;
+}
+#pp11{
+    font-size: 1.4rem;
+    top: 57.5rem;
+    left: 50.2rem;
+}
+#pp12{
+    font-size: 1.4rem;
+    top: 59.5rem;
+    left: 53.5rem;
+}
+#pp13{
+    font-size: 1.4rem;
+    top: 63rem;
+    left: 51.2rem;
+} #ep13 {
+    height: 3.72rem;
+    top: 59.5rem;
+    left: 52rem;
+}
+#pp14{
+    font-size: 1.4rem;
+    top: 59.7rem;
+    left: 50.2rem;
+}
+#pp15{
+    font-size: 1.4rem;
+    top: 52rem;
+    left: 48.7rem;
+}
+#pp16{
+    font-size: 1.4rem;
+    top: 55.2rem;
+    left: 43rem;
+}
+#pp17{
+    font-size: 1.4rem;
+    top: 52rem;
+    left: 40.5rem;
+} #ep17 {
+    height: 3.5rem;
+    top: 53.6rem;
+    left: 41.25rem;
+}
+#pp18{
+    font-size: 1.4rem;
+    top: 57.7rem;
+    left: 40rem;
+}
+#pp19{
+    font-size: 1.4rem;
+    top: 58.9rem;
+    left: 47.6rem;
+}
+#pp20{
+    font-size: 1.4rem;
+    top: 57rem;
+    left: 45.6rem;
+}
+#pp21{
+    font-size: 1.4rem;
+    top: 58.5rem;
+    left: 42.5rem;
+}
+#pp22{
+    font-size: 1.4rem;
+    top: 61.5rem;
+    left: 45.8rem;
+}
+#pp23{
+    font-size: 1.4rem;
+    top: 61.3rem;
+    left: 43rem;
+}
+#pp24{
+    font-size: 1.4rem;
+    top: 63.5rem;
+    left: 40.5rem;
+}
+#pp25{
+    font-size: 1.4rem;
+    top: 60.8rem;
+    left: 39.3rem;
+}
+#pp26{
+    font-size: 1.4rem;
+    top: 56rem;
+    left: 37rem;
+} #ep26 {
+    top: 57.6rem;
+    left: 37.7rem;
+}
+#pp27{
+    font-size: 1.4rem;
+    top: 72rem;
+    left: 37.5rem;
+} #ep27 {
+    height: 8rem;
+    top: 64rem;
+    left: 38.2rem;
+}
+#pp28{
+    font-size: 1.4rem;
+    top: 61.4rem;
+    left: 35rem;
+}
+#pp29{
+    font-size: 1.4rem;
+    top: 64rem;
+    left: 38.5rem;
+}
+#pp30{
+    font-size: 1.4rem;
+    top: 69rem;
+    left: 36.45rem;
+} #ep30 {
+    height: 3.2rem;
+    top: 65.8rem;
+    left: 37.3rem;
+}
+#pp31{
+    font-size: 1.4rem;
+    top: 59rem;
+    left: 31.5rem;
+}
+#pp32{
+    font-size: 1.4rem;
+    top: 61rem;
+    left: 27rem;
+}
+#pp33{
+    font-size: 1.4rem;
+    top: 62rem;
+    left: 31.5rem;
+}
+#pp34{
+    font-size: 1.4rem;
+    top: 63rem;
+    left: 28.2rem;
+}
+#pp35{
+    font-size: 1.4rem;
+    top: 64.5rem;
+    left: 24rem;
+}
+#pp36{
+    font-size: 1.4rem;
+    top: 65.7rem;
+    left: 33rem;
+}
+#pp37{
+    font-size: 1.4rem;
+    top: 70rem;
+    left: 32rem;
+} #ep37 {
+    height: 4.8rem;
+    top: 65.3rem;
+    left: 32.7rem;
+}
+#pp38{
+    font-size: 1.4rem;
+    top: 66.3rem;
+    left: 28.4rem;
+}
+#pp39{
+    font-size: 1.4rem;
+    top: 67.5rem;
+    left: 30.5rem;
+}
+#pp40{
+    font-size: 1.4rem;
+    top: 67rem;
+    left: 21.1rem;
+}
+#pp41{
+    font-size: 1.4rem;
+    top: 64.5rem;
+    left: 19rem;
+} #ep41 {
+    height: 3rem;
+    top: 66rem;
+    left: 19.7rem;
+}
+#pp42{
+    font-size: 1.4rem;
+    top: 64.85rem;
+    left: 14.8rem;
+} #ep42 {
+    height: 5rem;
+    transform: rotate(-35deg);
+    top: 66rem;
+    left: 17.5rem;
+}
+#pp43{
+    font-size: 1.4rem;
+    top: 70.7rem;
+    left: 21.3rem;
+}
+#pp44{
+    font-size: 1.4rem;
+    top: 68.5rem;
+    left: 23.5rem;
+}
+#pp45{
+    font-size: 1.4rem;
+    top: 72rem;
+    left: 23.3rem;
+}
+#pp46{
+    font-size: 1.4rem;
+    top: 74rem;
+    left: 20.8rem;
+}
+#pp47{
+    font-size: 1.4rem;
+    top: 70rem;
+    left: 13rem;
+} #ep47 {
+    height: 3.5rem;
+    top: 71.5rem;
+    left: 13.7rem;
+}

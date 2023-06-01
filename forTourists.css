@@ -1,0 +1,254 @@
+* {
+    padding: 0px;
+    margin:  0px;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    
+    font-size: 62.5%;/*<--- 1rem = 10px*/
+ }
+
+.header {
+    padding: 1rem;
+    border-bottom: solid black 1px;
+    height: auto;
+}
+
+#logo {
+    height: 7rem;
+    width: 35rem;
+}
+
+.nav {
+    overflow: hidden;
+    margin-top: 3.2rem;
+    float: right;
+} .nav:first-child {
+    margin-left: 5rem;
+}
+.nav #nav-el{
+    margin-right: 5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+} 
+#nav-el:hover {
+    color: #be0029;
+    transition: 0.18s;
+}
+
+.slider-container img {
+    max-width: 100%;
+}
+  
+.slider-container{
+    height: 40rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+}
+  
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+}
+  
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #868686;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+}
+  
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+}
+  
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+}
+  
+.slide-1 {
+    background-image: url("japanImages/icCards.jpg");
+}
+.slide-2 {
+    background-image: url("japanImages/yenImg.jpg");
+}
+.slide-3 {
+    background-image: url("japanImages/jrpassImg.jpg");
+}
+
+.slide-txt {
+    font-family: 'Shark Made In Japan', sans-serif;
+    font-size: 10rem;
+    line-height: 150%;
+    text-shadow: -0.08rem 0 #000000, 0 1rem #000000, 1rem 0 #000000, 0 -0.08rem #000000;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;transform: translate(-50%, -50%);
+}
+
+.explanation {
+    padding: 2rem;
+}
+
+.exp-txt {
+    text-align: center;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.visit-jpn {
+    font-family: 'Instrument Sans', sans-serif;
+    padding: 2rem;
+}
+
+.visit-jpn-txt {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.visit-jpn-txt {
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+#more-info {
+    color: #be0029;
+} #more-info:focus {
+    color: #7a011c;
+}
+
+.img-text {
+    width: 35rem;
+    /*height: 35rem;*/
+    padding: 2rem;
+    
+    color: #111;
+    text-align: center;    
+    float: left;
+    font-size: 90px;
+    shape-outside: polygon();
+    display: inline-block;
+    background-clip: content-box;
+} /*#img4 {
+    width: 40rem;
+    height: 21.6rem;
+} #img5 {
+    width: 20rem;
+    height: 19.4rem;
+}*/
+
+.price-table-cont {
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.price-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-main {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: #be002957;
+}
+
+.row {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+td + td {
+    border-left: 1px solid black;
+}
+
+
+@media screen and (min-width: 1088px) and (max-width: 1692px) {
+    #img1 {
+        width: 40rem;
+        height: 21.6rem;
+        margin-bottom: 0.7rem;
+    } #img2 {
+        width: 48rem;
+        height: 30rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 1693px) and (max-width: 1712px) {
+    #img1 {
+        width: 40rem;
+        height: 19.4rem;
+        margin-bottom: 0.7rem;
+    } #img2 {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 1713px) and (max-width: 1920px) {
+    #img1 {
+        width: 40rem;
+        height: 19.4rem;
+        margin-bottom: 0.7rem;
+    } #img2 {
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 0.7rem;
+    } 
+    
+    #t3 {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .nav{
+        float: none;
+        margin: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #img1 {
+        width: 30rem;
+        height: 20rem;
+    } 
+}

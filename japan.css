@@ -1,0 +1,186 @@
+* {
+    padding: 0px;
+    margin:  0px;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    
+    font-size: 62.5%;/*<--- 1rem = 10px*/
+ }
+
+.header {
+    padding: 1rem;
+    border-bottom: solid black 1px;
+    height: auto;
+}
+
+#logo {
+    height: 7rem;
+    width: 35rem;
+}
+
+.nav {
+    overflow: hidden;
+    margin-top: 3.2rem;
+    float: right;
+} .nav:first-child {
+    margin-left: 5rem;
+}
+.nav #nav-el{
+    margin-right: 5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+} 
+#nav-el:hover {
+    color: #be0029;
+    transition: 0.18s;
+}
+  
+.slider-container img {
+    max-width: 100%;
+}
+  
+.slider-container{
+    height: 40rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+}
+  
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+}
+  
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+}
+  
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+}
+  
+[id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+}
+  
+.slide-1 {
+    background-image: url("japanImages/20230407_105143.jpg");
+}
+.slide-2 {
+    background-image: url("https://4kwallpapers.com/images/wallpapers/fushimi-inari-taisha-shrine-kyoto-japan-orange-4442x2514-5301.jpg");
+}
+.slide-3 {
+    background-image: url("");
+}
+.slide-4 {
+    background-image: url("");
+}
+
+.slide-txt {
+    font-family: 'Shark Made In Japan', sans-serif;
+    font-size: 10rem;
+    line-height: 150%;
+    text-shadow: -2px 0 #000, 0 0.5rem #000, 0.5rem 0 #000, 0 -2px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} #text1 {
+    color: rgb(210, 86, 59);
+} #text2 {
+    color: rgb(236, 99, 11);
+} #text3 {
+    color: rgb(255, 255, 255);
+} #text4 {
+    color: rgb(255, 255, 255);
+}
+
+.about-jpn {
+    font-family: 'Instrument Sans', sans-serif;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    padding: 2rem;
+} .title #t3 {
+    margin-top: 2rem;
+}
+
+.img-text {
+    width: 35rem;
+    /*height: 35rem;*/
+    padding: 2rem;
+    
+    color: #111;
+    text-align: center;    
+    float: left;
+    font-size: 90px;
+    shape-outside: polygon();
+    display: inline-block;
+    background-clip: content-box;
+}  #img3 {
+    width: 48rem;
+    height: 30rem;
+}
+
+.about-jpn-txt {
+    font-size: 1.8rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+@media screen and (min-width: 861px) and (max-width: 1920px) {
+    #img2 {
+        width: 23rem;
+        height: 23rem;
+        margin-bottom: 0.7rem;
+    } #img3 {
+        width: 48rem;
+        height: 30rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .nav{
+        float: none;
+        margin: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #img2 {
+        width: 30rem;
+        height: 30rem;
+    } 
+}
