@@ -199,6 +199,34 @@ html {
     background-color: #7a7a7a;
 }
 
+.hokkaido:hover {
+    background-color: #9e5d5d80;
+}
+.tohoku:hover {
+    background-color: #b79f7a80;
+}
+.kanto:hover {
+    background-color: #7a9f5d80;
+}
+.chubu:hover {
+    background-color: #70a0ac80;
+}
+.kansai:hover {
+    background-color: #9575a480;
+}
+.chugoku:hover {
+    background-color: #b3570280;
+}
+.shikoku:hover {
+    background-color: #5456a380;
+}
+.kyushu:hover {
+    background-color: #7a7a7a80;
+}
+.okinawa:hover {
+    background-color: #7a7a7a80;
+}
+
 .extend-pointer {
     background-color: #111111ad;
     width: 0.2rem;
