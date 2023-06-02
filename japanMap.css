@@ -60,7 +60,7 @@ html {
 }
   
 @media (max-width: 861px) {
-    .nav {
+    .none {
       display: none;
     }
 
@@ -73,14 +73,20 @@ html {
 
     #burger-menu:hover{
         content: url("japanImages/burgerRosso.svg");
-    }
-    
-    .nav-after {
-        display: flex;
-        flex-wrap: wrap;
-    }    
+    }         
 }
-  
+
+.nav-after {
+    display: grid;
+    grid-auto-rows: min-content;
+    position: absolute;
+    left: 87%;
+    top: 8%;
+    #nav-el {
+        padding: 0.5rem;
+        margin: 0;
+    }
+}     
 
 @media screen and (max-width: 860px) {
     .nav{
