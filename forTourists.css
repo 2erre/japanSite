@@ -19,6 +19,8 @@ html {
     padding: 1rem;
     border-bottom: solid black 1px;
     height: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 #logo {
@@ -30,6 +32,9 @@ html {
     overflow: hidden;
     margin-top: 3.2rem;
     float: right;
+    background-color: #fff;
+    display: flex;
+    align-items: start;
 } .nav:first-child {
     margin-left: 5rem;
 }
@@ -42,6 +47,56 @@ html {
 #nav-el:hover {
     color: #be0029;
     transition: 0.18s;
+}
+  
+#nav-el {
+    text-decoration: none;
+    margin-right: 20px;
+    color: #fff;
+} #nav-el:last-child {
+    margin-right: 3rem;
+}
+
+.hamburger {
+    display: none;
+}
+  
+@media (max-width: 861px) {
+    .none {
+      display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        color: #000000;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    #burger-menu:hover{
+        content: url("japanImages/burgerRosso.svg");
+    }         
+}
+
+.nav-after {
+    display: grid;
+    grid-auto-rows: min-content;
+    position: absolute;
+    left: 87%;
+    top: 8%;
+    z-index: 101;
+    #nav-el {
+        padding: 0.5rem;
+        margin: 0;
+    }
+}     
+
+@media screen and (max-width: 860px) {
+    .nav{
+        float: none;
+        margin: 1rem;
+        margin-bottom: 0.5rem;
+    }
 }
 
 .slider-container img {
