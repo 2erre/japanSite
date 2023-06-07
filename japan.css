@@ -208,12 +208,6 @@ html {
     height: 30rem;
 }
 
-.img-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .about-jpn-txt {
     font-size: 1.8rem;
     padding-left: 2rem;
@@ -229,6 +223,12 @@ html {
         width: 48rem;
         height: 30rem;
         margin-bottom: 0.7rem;
+    }
+
+    .img-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

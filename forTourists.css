@@ -254,22 +254,22 @@ td + td {
     border-left: 1px solid black;
 }
 
-.img-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 @media screen and (min-width: 1088px) and (max-width: 1692px) {
     #img1 {
-        width: 40rem;
+        width: 30rem;
         height: 21.6rem;
         margin-bottom: 0.7rem;
     } #img2 {
         width: 32rem;
         height: 30rem;
         margin-bottom: 0.7rem;
+    }
+    
+    .img-card {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -282,6 +282,11 @@ td + td {
         width: 20rem;
         height: 20rem;
         margin-bottom: 0.7rem;
+    }
+
+    .img-card {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -298,6 +303,11 @@ td + td {
     
     #t3 {
         margin-top: 1.5rem;
+    }
+    
+    .img-card {
+        display: flex;
+        align-items: center;
     }
 }
 
