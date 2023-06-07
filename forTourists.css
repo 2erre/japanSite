@@ -214,7 +214,7 @@ html {
     
     color: #111;
     text-align: center;    
-    float: left;
+    /*float: left;*/
     font-size: 90px;
     shape-outside: polygon();
     display: inline-block;
@@ -254,6 +254,12 @@ td + td {
     border-left: 1px solid black;
 }
 
+.img-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media screen and (min-width: 1088px) and (max-width: 1692px) {
     #img1 {
@@ -261,7 +267,7 @@ td + td {
         height: 21.6rem;
         margin-bottom: 0.7rem;
     } #img2 {
-        width: 48rem;
+        width: 32rem;
         height: 30rem;
         margin-bottom: 0.7rem;
     }
