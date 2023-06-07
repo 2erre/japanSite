@@ -198,8 +198,7 @@ html {
     padding: 2rem;
     
     color: #111;
-    text-align: center;    
-    float: left;
+    text-align: center; 
     font-size: 90px;
     shape-outside: polygon();
     display: inline-block;
@@ -207,6 +206,12 @@ html {
 }  #img3 {
     width: 48rem;
     height: 30rem;
+}
+
+.img-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-jpn-txt {
